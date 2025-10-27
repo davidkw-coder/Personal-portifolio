@@ -13,11 +13,11 @@ export default function Contact({ scrollToSection }) {
 
         <div className="bg-white w-[700px] border-2 border-gray-200 rounded-full px-16 py-8 flex mx-[150px] items-center justify-center gap-20 mb-24 shadow-md hover:shadow-lg transition-shadow duration-300">
           <a
-            href="mailto:wivineiratuzi@gmail.com"
+            href="mailto:kwizeradaviditss@gmail.com"
             className="flex items-center text-black gap-4 hover:opacity-60 transition-all duration-300"
           >
             <Mail size={28} className="w-9 h-9" strokeWidth={1.5} />
-            <span className="text-xl font-medium">wivineiratuzi@gmail.com</span>
+            <span className="text-xl font-medium">kwizeradaviditss@gmail.com</span>
           </a>
           <a
             href="https://linkedin.com"
@@ -58,7 +58,7 @@ export default function Contact({ scrollToSection }) {
             Contact
           </button>
         </nav>
-        <p className="text-center text-gray-600 text-lg">Copyright © 2023 IRATUZI Wivine. All Rights Reserved.</p>
+        <p className="text-center text-gray-600 text-lg">Copyright © 2023 KWIZERA David. All Rights Reserved.</p>
       </footer>
     </section>
   )

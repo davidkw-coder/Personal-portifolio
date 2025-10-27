@@ -43,7 +43,7 @@ export default function Portfolio() {
       <nav className="fixed top-0 left-0 right-0 bg-transparent z-50">
         <div className="max-w-7xl mx-auto px-12 py-6">
           <div className="flex items-center justify-between">
-            <h1 className="text-3xl text-black">IRATUZI</h1>
+            <h1 className="text-3xl text-black">KWIZERA</h1>
 
             <div className="flex gap-12">
               {["About", "Experience", "Projects", "Contact"].map((item) => (

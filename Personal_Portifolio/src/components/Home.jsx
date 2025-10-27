@@ -15,7 +15,7 @@ export default function Home({ scrollToSection }) {
         <div className="flex-1 text-center lg:text-left">
           <p className="text-gray-500 text-base sm:text-lg lg:text-xl mb-2 lg:mb-3 font-medium">Hello, I'm</p>
           <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-7xl font-bold mb-3 lg:mb-4 leading-tight text-black">
-            IRATUZI <br/> Wivine
+            KWIZERA <br/> David
           </h1>
           <p className="text-xl sm:text-2xl lg:text-3xl text-gray-600 mb-6 lg:mb-10 font-bold">Frontend Developer</p>
 
