@@ -18,38 +18,75 @@ export default function Experience() {
   ]
 
   return (
-    <section id="experience" className="min-h-screen flex items-center justify-center px-12 py-20 relative">
+    <section
+      id="experience"
+      className="min-h-screen flex items-center justify-center px-6 md:px-12 lg:px-20 py-24 bg-white relative"
+    >
       <div className="max-w-7xl w-full">
+        {/* Header */}
         <div className="text-center mb-16">
-          <p className="text-xl mb-3 font-medium text-gray-500">Explore My</p>
-          <h2 className="text-6xl font-bold text-black">Experience</h2>
+          <p className="text-lg sm:text-xl text-gray-500 font-medium mb-2">
+            Explore My
+          </p>
+          <h2 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-gray-900">
+            Experience
+          </h2>
         </div>
 
-        <div className="flex gap-10">
-          <div className="flex-1 bg-white border-2 border-gray-200 rounded-[2.5rem] p-12 shadow-md hover:shadow-lg transition-shadow duration-300">
-            <h3 className="text-3xl font-bold text-center mb-12 text-black">Frontend Development</h3>
-            <div className="grid grid-cols-2 gap-x-16 gap-y-8">
+        {/* Skill Cards */}
+        <div className="flex flex-col lg:flex-row gap-10 lg:gap-14">
+          {/* Frontend Card */}
+          <div className="flex-1 bg-white border border-gray-200 rounded-3xl p-8 sm:p-10 shadow-md hover:shadow-xl transition-all duration-300">
+            <h3 className="text-2xl sm:text-3xl font-bold text-center mb-10 text-gray-900">
+              Frontend Development
+            </h3>
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-10 gap-y-6">
               {frontendSkills.map((skill) => (
-                <div key={skill.name} className="flex items-start gap-4">
-                  <CheckCircle2 size={24} className="w-7 h-7 flex-shrink-0 mt-1" strokeWidth={2} />
+                <div
+                  key={skill.name}
+                  className="flex items-start gap-4 sm:gap-5"
+                >
+                  <CheckCircle2
+                    size={26}
+                    className="text-gray-800 flex-shrink-0 mt-1"
+                    strokeWidth={2}
+                  />
                   <div>
-                    <h4 className="text-xl font-bold text-black">{skill.name}</h4>
-                    <p className="text-gray-600 text-lg">{skill.level}</p>
+                    <h4 className="text-lg sm:text-xl font-bold text-gray-900">
+                      {skill.name}
+                    </h4>
+                    <p className="text-gray-600 text-base sm:text-lg">
+                      {skill.level}
+                    </p>
                   </div>
                 </div>
               ))}
             </div>
           </div>
 
-          <div className="flex-1 bg-white border-2 border-gray-200 rounded-[2.5rem] p-12 shadow-md hover:shadow-lg transition-shadow duration-300">
-            <h3 className="text-3xl font-bold text-center mb-12 text-black">Backend Development</h3>
-            <div className="grid grid-cols-2 gap-x-16 gap-y-8">
+          {/* Backend Card */}
+          <div className="flex-1 bg-white border border-gray-200 rounded-3xl p-8 sm:p-10 shadow-md hover:shadow-xl transition-all duration-300">
+            <h3 className="text-2xl sm:text-3xl font-bold text-center mb-10 text-gray-900">
+              Backend Development
+            </h3>
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-10 gap-y-6">
               {backendSkills.map((skill) => (
-                <div key={skill.name} className="flex items-start gap-4">
-                  <CheckCircle2 size={24} className="w-7 h-7 flex-shrink-0 mt-1" strokeWidth={2} />
+                <div
+                  key={skill.name}
+                  className="flex items-start gap-4 sm:gap-5"
+                >
+                  <CheckCircle2
+                    size={26}
+                    className="text-gray-800 flex-shrink-0 mt-1"
+                    strokeWidth={2}
+                  />
                   <div>
-                    <h4 className="text-xl font-bold text-black">{skill.name}</h4>
-                    <p className="text-gray-600 text-lg">{skill.level}</p>
+                    <h4 className="text-lg sm:text-xl font-bold text-gray-900">
+                      {skill.name}
+                    </h4>
+                    <p className="text-gray-600 text-base sm:text-lg">
+                      {skill.level}
+                    </p>
                   </div>
                 </div>
               ))}
@@ -58,8 +95,9 @@ export default function Experience() {
         </div>
       </div>
 
-      <div className="absolute bottom-12 right-12 animate-bounce">
-        <ChevronDown size={36} className="w-12 h-12 text-black" strokeWidth={2} />
+      {/* Scroll Down Arrow */}
+      <div className="absolute bottom-10 right-1/2 translate-x-1/2 lg:right-12 lg:translate-x-0 animate-bounce">
+        <ChevronDown size={36} className="text-gray-800" strokeWidth={2} />
       </div>
     </section>
   )
